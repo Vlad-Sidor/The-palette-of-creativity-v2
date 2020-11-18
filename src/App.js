@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-//import "node_modules/video-react/dist/video-react.css"; 
 
 import Home from "./pages/Home";
 import Competitions from "./pages/Сompetitions";
