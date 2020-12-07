@@ -14,19 +14,25 @@ export default class CommunicationForm extends Component {
     };
   }
 
-  handleSubmit = () => {
+  handleSubmit = async (event) => {
+    event.preventDefault();
+
     let data = {
       Name: this.state.Name,
       Competion: this.state.Competion,
       URL: this.state.URL,
       Text: this.state.Text,
     };
-    sendFeedBack(data);
+    let response = await sendFeedBack(data);
+
+    if (response.status == 200) {
+      window.location.reload();
+    }
   };
 
   render() {
     return (
-      <Form id="title">
+      <Form id="title" onSubmit={this.handleSubmit}>
         <Title title="Связаться с нами" />
         <div class="row margin-left">
           <div class="column">
@@ -79,7 +85,6 @@ export default class CommunicationForm extends Component {
             <Button
               variant="primary"
               className="btn-primary btn-right"
-              onClick={this.handleSubmit}
               type="submit"
             >
               Отправить
