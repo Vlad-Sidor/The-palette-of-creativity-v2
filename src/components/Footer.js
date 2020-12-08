@@ -1,8 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react"; 
 import { FaAlignRight } from "react-icons/fa";
-//import { Map, GoogleApiWrapper } from 'google-maps-react';
-
 
 
 export default class Navbar extends Component {

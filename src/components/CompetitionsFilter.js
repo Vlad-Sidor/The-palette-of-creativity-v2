@@ -45,18 +45,6 @@ const CompetitionsFilter = ({ competitions }) => {
             {types}
           </select>
         </div>
-        {/* end of select type */}
-        {/* guests  */}
-         {/* end of guests */}
-        {/* room price */}
-       
-        {/* end of room price*/}
-        {/* size */}
-        
-        {/* end of select type */}
-        {/* extras */}
-       
-        {/* end of extras type */}
       </form>
     </section>
   );

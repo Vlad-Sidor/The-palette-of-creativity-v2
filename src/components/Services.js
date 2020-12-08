@@ -1,17 +1,19 @@
 import React, { Component } from "react";
-import {FaTheaterMasks,  FaShuttleVan, FaCoffee } from "react-icons/fa";
-import {MdPhotoCamera} from "react-icons/md";
+import { FaTheaterMasks } from "react-icons/fa";
+import { MdPhotoCamera } from "react-icons/md";
 import { HiMicrophone } from "react-icons/hi";
-import { GiMusicalNotes} from "react-icons/gi";
+import { GiMusicalNotes } from "react-icons/gi";
 import Title from "./Title";
+
 export default class Services extends Component {
-  state = {
-    services: [
+
+  render() {
+    const services = [
       {
         icon: <HiMicrophone />,
         title: "Студенческий листопад",
         info:
-        "Ежегодный открытый конкурс популярной песни «Студенческий листопад»"
+          "Ежегодный открытый конкурс популярной песни «Студенческий листопад»"
       },
       {
         icon: <GiMusicalNotes />,
@@ -32,13 +34,11 @@ export default class Services extends Component {
           "Фотоконкурс по номинации «Природа. Город. Люди» "
       }
     ]
-  };
-  render() {
     return (
       <section className="services">
         <Title title="Конкурсы" />
         <div className="services-center">
-          {this.state.services.map(item => {
+          {services.map(item => {
             return (
               <article key={`item-${item.title}`} className="service">
                 <span>{item.icon}</span>

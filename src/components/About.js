@@ -21,7 +21,7 @@ export default class About extends Component {
           {this.state.services.map(item => {
             return (
               <article key={`item-${item.title}`} className="service">
-                  <div class='roomslist_new'>
+                  <div className='roomslist_new'>
                     <ReactPlayer url={[Presentation]}/> 
                   </div>
                 <p className="text-align">{item.info}</p>

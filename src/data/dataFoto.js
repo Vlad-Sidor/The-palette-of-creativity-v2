@@ -1,6 +1,5 @@
 import img1 from "./images/foto-1.jpeg";
-import img2 from "./images/foto-2.jpeg";
-import img3 from "./images/foto-3.jpeg";
+import img2 from "./images/foto-2.jpeg"; 
 
 export const dataFoto = [
   {

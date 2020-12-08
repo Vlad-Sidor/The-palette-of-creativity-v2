@@ -10,7 +10,7 @@ export const CarouselPhoto = ({ images, nameCarousel, interval }) => {
       <Carousel className="carousel-custom">
         {images.map((image) => {
           return (
-            <Carousel.Item interval={interval} onPause="hover">
+            <Carousel.Item interval={interval} pause="hover" key={`${image._id}-${image.index}`}>
               <img
                 className="d-block w-100"
                 src={image.picture}

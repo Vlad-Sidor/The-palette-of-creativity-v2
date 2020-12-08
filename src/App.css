@@ -595,7 +595,6 @@ services-partimg {
 
 .container {
   padding: 5rem 0;
-  background-color: var(--darkGrey);
   border-color: var(--primaryColor);
 }
 

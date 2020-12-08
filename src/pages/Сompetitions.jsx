@@ -2,11 +2,11 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import Video2 from "../components/Video2";
+import { VideoPlayer } from "../components/VideoPlayer";
 import { CarouselPhoto } from "../components/CarouselPhoto";
 import { gallery } from "../data/index";
 
-const competitions = () => {
+export const Competitions = () => {
   return (
     <div className="competions">
       <Hero hero="roomsHero">
@@ -16,11 +16,12 @@ const competitions = () => {
           </Link>
         </Banner>
       </Hero>
-      <Video2 />
+      <VideoPlayer />
 
-      {gallery.map((range) => {
+      {gallery.map((range, index) => {
         return (
           <CarouselPhoto
+            key={`${range.name}-${index}`}
             nameCarousel={range.name}
             images={range.data}
             interval={range.interval}
@@ -30,5 +31,3 @@ const competitions = () => {
     </div>
   );
 };
-
-export default competitions;

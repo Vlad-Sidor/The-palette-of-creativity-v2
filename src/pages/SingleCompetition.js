@@ -10,18 +10,14 @@ import StyledHero from "../components/StyledHero";
 
 export default class SingleCompetition extends Component {
   constructor(props) {
-    super(props);
-   // console.log(this.props);
+    super(props); 
     this.state = {
       slug: this.props.match.params.slug,
       defaultBcg: defaultBcg
     };
   }
   static contextType = RoomContext;
-
-  // componentDidMount() {
-  //   console.log(this.props);
-  //}
+ 
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
@@ -31,7 +27,7 @@ export default class SingleCompetition extends Component {
         <div className="error">
           <h3> no such competitions could be found...</h3>
           <Link to="/competitions" className="btn-primary">
-          back to all competitions
+            back to all competitions
           </Link>
         </div>
       );
@@ -39,25 +35,18 @@ export default class SingleCompetition extends Component {
     const {
       name,
       description,
-      capacity,
-      size,
-      price,
       extras,
-      breakfast,
-      pets,
       images
     } = room;
-    const [main, ...defaultImages] = images;
-    console.log(defaultImages);
 
     return (
       <>
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`Конкурс ${name}`}>
             <Link to="/" className="btn-primary">
-            Вернуться на главную   
+              Вернуться на главную
             </Link>
-            
+
           </Banner>
         </StyledHero>
 
@@ -66,7 +55,7 @@ export default class SingleCompetition extends Component {
           <div className="single-room-images">
             {images.map((item, index) => {
               return <img key={index} src={item} alt={name} />;
-    })}
+            })}
           </div>
           <div className="single-room-info">
             <article className="desc">
@@ -74,17 +63,17 @@ export default class SingleCompetition extends Component {
               <p>{description}</p>
             </article>
             <article className="info">
-               <h6>Номинации</h6>
+              <h6>Номинации</h6>
               <ul className="extras">
-              {extras.map((item, index) => (
-              <li key={index}>- {item}</li>
-              ))}
-            </ul>
+                {extras.map((item, index) => (
+                  <li key={index}>- {item}</li>
+                ))}
+              </ul>
             </article>
           </div>
         </section>
         <section className="room-extras">
-        
+
         </section>
       </>
     );

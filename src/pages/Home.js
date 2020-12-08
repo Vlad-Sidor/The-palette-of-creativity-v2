@@ -1,19 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Form, Button } from "react-bootstrap";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import Competition from "../components/Competition";
-import RoomsContainer from "../components/CompetitionsContainer";
 import Partners from "../components/Partners";
 import TimerCon from "../components/TimerCon/TimerCon";
 import CommunicationForm from "../components/CommunicationForm.js";
-import Organizers from "../components/Organizers.js";
-import Video2 from "../components/Video2.js";
+import { OrgCommittee } from "../components/OrgCommittee/OrgCommittee";
 
 const home = () => {
   return (
@@ -31,13 +27,11 @@ const home = () => {
           </Link>
         </Banner>
       </Hero>
-
       <About />
       <FeaturedRooms />
       <Services />
       <Partners />
-      <Organizers />
-
+      <OrgCommittee />
       <CommunicationForm />
       <Footer />
     </>

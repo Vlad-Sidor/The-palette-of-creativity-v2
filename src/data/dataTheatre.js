@@ -5,15 +5,13 @@ import img4 from "./images/Theatre-4.jpeg";
 import img5 from "./images/Theatre-5.jpeg";
 import img6 from "./images/Theatre-6.jpeg";
 import img7 from "./images/Theatre-7.jpeg";
-import img8 from "./images/Theatre-8.jpeg";
 import img9 from "./images/Theatre-9.jpeg";
 import img10 from "./images/Theatre-10.jpeg";
 import img11 from "./images/Theatre-11.jpeg";
 import img12 from "./images/Theatre-12.jpeg";
 import img13 from "./images/Theatre-13.jpeg";
 
-export const dataTheatre = [
-  {
+export const dataTheatre = [{
     _id: "593e9297e17df20c4a237d42",
     index: 0,
     age: 2018,

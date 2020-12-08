@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Form, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import Title from "./Title";
 import { sendFeedBack } from "../api/actions";
 
@@ -25,7 +25,7 @@ export default class CommunicationForm extends Component {
     };
     let response = await sendFeedBack(data);
 
-    if (response.status == 200) {
+    if (response.status === 200) {
       window.location.reload();
     }
   };
@@ -34,8 +34,8 @@ export default class CommunicationForm extends Component {
     return (
       <Form id="title" onSubmit={this.handleSubmit}>
         <Title title="Связаться с нами" />
-        <div class="row margin-left">
-          <div class="column">
+        <div className="row margin-left">
+          <div className="column">
             <Form.Label>
               <h4>ФИО:</h4>
             </Form.Label>
@@ -70,7 +70,7 @@ export default class CommunicationForm extends Component {
               }}
             />
           </div>
-          <div class="column">
+          <div className="column">
             <Form.Label>
               <h4>Текст сообщения:</h4>
             </Form.Label>

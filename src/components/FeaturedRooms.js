@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import Title from "./Title";
+import React, { Component } from "react"; 
 import { RoomContext } from "../context";
 import Competition from "./Competition";
 import Loading from "./Loading";
