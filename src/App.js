@@ -6,21 +6,19 @@ import Competitions from "./pages/Сompetitions";
 import SingleCompetition from "./pages/SingleCompetition";
 import Error from "./pages/Error";
 
-import Navbar from "./components/Navbar";
+import { NavBar } from "./components/NavBar";
 
 import { Switch, Route } from "react-router-dom";
-
 
 function App() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/competitions/" component={Competitions} />
         <Route exact path="/competitions/:slug" component={SingleCompetition} />
         <Route component={Error} />
-      
       </Switch>
     </>
   );

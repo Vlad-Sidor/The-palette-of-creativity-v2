@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 import Competition from "../components/Competition";
 import RoomsContainer from "../components/CompetitionsContainer";
 import Partners from "../components/Partners";
-import TimerCon from "../components/TimerCon";
+import TimerCon from "../components/TimerCon/TimerCon";
 import CommunicationForm from "../components/CommunicationForm.js";
 import Organizers from "../components/Organizers.js";
 import Video2 from "../components/Video2.js";
