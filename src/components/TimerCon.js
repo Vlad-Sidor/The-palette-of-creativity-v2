@@ -22,7 +22,6 @@ class CountDown extends Component {
         var now = new Date().getTime();
         
         var t = this.deadline-now;
-        console.log(t);
         
         var days = Math.floor(t / (1000 * 60 * 60 * 24));
         var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -35,7 +34,7 @@ class CountDown extends Component {
             }
     }
     componentDidMount() {
-        this.deadline = new Date("2020-11-25").getTime();
+        this.deadline = new Date("2021-11-25").getTime();
         
  
         this.x = setInterval(this.count, 1000);
