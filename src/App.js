@@ -8,13 +8,16 @@ import Error from "./pages/Error";
 
 import { NavBar } from "./components/NavBar";
 
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 function App() {
   return (
     <>
       <NavBar />
       <Switch>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
         <Route exact path="/home" component={Home} />
         <Route exact path="/competitions/" component={Competitions} />
         <Route exact path="/competitions/:slug" component={SingleCompetition} />
