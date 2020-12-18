@@ -1,16 +1,16 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
-import Presentation from "../images/Presentation.mp4";
+import React from 'react';
+import ReactPlayer from 'react-player';
 
-export const VideoPlayer = () => {
-    return (
-        <div className='roomslist_new roomslist_new_background'>
-            <ReactPlayer
-                playing={true}
-                className='response-player'
-                controls={true}
-                muted={true}
-                url={Presentation} />
-        </div>
-    )
-}
+export const VideoPlayer = ({ url }) => {
+  return (
+    <div className='roomslist_new roomslist_new_background'>
+      <ReactPlayer
+        playing={true}
+        className='response-player'
+        controls={true}
+        muted={true}
+        url={url}
+      />
+    </div>
+  );
+};

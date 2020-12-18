@@ -12,12 +12,10 @@ export default class FeaturedRooms extends Component {
       return <Competition key={competition.id} competition={competition} />;
     });
     return (
-      <section className="roomslist">
-     
+      <section className="roomslist">     
         <div className="roomslist-center">
           {loading ? <Loading /> : competitions}
-        </div>
-       
+        </div>       
       </section>
     );
   }

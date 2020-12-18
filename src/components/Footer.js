@@ -1,7 +1,5 @@
 import React, { Component } from "react"; 
 import { FaAlignRight } from "react-icons/fa";
-
-
 export default class Navbar extends Component {
   state = {
     isOpen: false
@@ -13,8 +11,7 @@ export default class Navbar extends Component {
     return (
       <nav className="footer">
         <div className="foot-center">
-          <div className="foot-header">
-          
+          <div className="foot-header">          
             <button
               type="button"
               className="nav-btn"
