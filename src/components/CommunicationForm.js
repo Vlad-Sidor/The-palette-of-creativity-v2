@@ -23,11 +23,11 @@ export class CommunicationForm extends Component {
       URL: this.state.URL,
       Text: this.state.Text,
     };
-    // let response = await sendFeedBack(data);
+    let response = await sendFeedBack(data);
 
-    // if (response.status === 200) {
-    //   window.location.reload();
-    // }
+    if (response.status === 200) {
+      window.location.reload();
+    }
   };
 
   render() {
