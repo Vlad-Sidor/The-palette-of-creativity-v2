@@ -8,7 +8,7 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 import Partners from "../components/Partners";
 import TimerCon from "../components/TimerCon/TimerCon";
-import CommunicationForm from "../components/CommunicationForm.js";
+import { CommunicationForm } from "../components/CommunicationForm.js";
 import { OrgCommittee } from "../components/OrgCommittee/OrgCommittee";
 
 const home = () => {

@@ -12,13 +12,13 @@ export default class Navbar extends Component {
       <nav className="footer">
         <div className="foot-center">
           <div className="foot-header">          
-            <button
+            {/* <button
               type="button"
               className="nav-btn"
               onClick={this.handleToggle}
             >
               <FaAlignRight className="nav-icon" />
-            </button>
+            </button> */}
           </div>
            
         </div>
