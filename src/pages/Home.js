@@ -18,7 +18,7 @@ const home = () => {
         <Banner
           title="
           ПАЛИТРА ТВОРЧЕСТВА"
-          subtitle="молодежный фестиваль"
+          subtitle="молодежный фестиваль 2021"
         >
           <TimerCon />
 
