@@ -10,6 +10,9 @@ import Partners from "../components/Partners";
 import TimerCon from "../components/TimerCon/TimerCon";
 import { CommunicationForm } from "../components/CommunicationForm.js";
 import { OrgCommittee } from "../components/OrgCommittee/OrgCommittee";
+import { VideoPlayer } from '../components/VideoPlayer';
+import { CarouselPhoto } from '../components/CarouselPhoto';
+import { gallery } from '../data/index';
 
 const home = () => {
   return (
@@ -26,6 +29,18 @@ const home = () => {
             галерея
           </Link>
         </Banner>
+    
+      {gallery.map((range, index) => {
+        return (
+          <CarouselPhoto
+            key={`${range.name}-${index}`}
+            nameCarousel={range.name}
+            images={range.data}
+            interval={range.interval}
+          />
+        );
+      })}
+    
       </Hero>
       <About />
       <FeaturedRooms />
