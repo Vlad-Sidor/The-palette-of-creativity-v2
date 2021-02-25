@@ -12,7 +12,7 @@ import { CommunicationForm } from "../components/CommunicationForm.js";
 import { OrgCommittee } from "../components/OrgCommittee/OrgCommittee";
 import { VideoPlayer } from '../components/VideoPlayer';
 import { CarouselPhoto } from '../components/CarouselPhoto';
-import { gallery } from '../data/index';
+import { result } from '../data/index';
 
 const home = () => {
   return (
@@ -31,7 +31,7 @@ const home = () => {
         </Banner>
       </Hero>
       
-       {gallery.map((range, index) => {
+       {result.map((range, index) => {
         return (
           <CarouselPhoto
             key= {`${range.name}-${index}`}
