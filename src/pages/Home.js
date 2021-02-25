@@ -29,8 +29,9 @@ const home = () => {
             галерея
           </Link>
         </Banner>
-    
-      {gallery.map((range, index) => {
+      </Hero>
+      
+       {gallery.map((range, index) => {
         return (
           <CarouselPhoto
             key={`${range.name}-${index}`}
@@ -40,8 +41,7 @@ const home = () => {
           />
         );
       })}
-    
-      </Hero>
+
       <About />
       <FeaturedRooms />
       <Services />
