@@ -34,7 +34,7 @@ const home = () => {
        {gallery.map((range, index) => {
         return (
           <CarouselPhoto
-            key={`${range.name}- 1`}
+            key={1}
             nameCarousel={range.name}
             images={range.data}
             interval={range.interval}
