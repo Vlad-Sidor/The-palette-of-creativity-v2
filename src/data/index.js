@@ -9,3 +9,7 @@ export const gallery = [
   { name: "Театр+", data: dataTheatre, interval: 3550 },
   { name: "Фотоконкурс", data: dataFoto, interval: 2600 },
 ];
+
+export const result = [
+  { name: "Фотоконкурс", data: dataFoto, interval: 2600 },
+];
