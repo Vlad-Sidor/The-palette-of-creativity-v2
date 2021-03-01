@@ -8,9 +8,8 @@
   align-items: center;
 }
 .carousel-header {
-  width: 50%;
   text-align: center;
-  border-bottom: 2px solid brown;
+  border-bottom: 2px solid #af9a7d;
   font-size: 30px;
   font-weight: bold;
 }
