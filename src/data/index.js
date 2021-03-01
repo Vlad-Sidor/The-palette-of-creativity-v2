@@ -11,5 +11,5 @@ export const gallery = [
 ];
 
 export const result = [
-  { name: "Фотоконкурс", data: dataFoto, interval: 2600 },
+  { name: "Награждение победителей", data: dataFoto, interval: 2600 },
 ];
