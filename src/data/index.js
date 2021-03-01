@@ -2,6 +2,7 @@ import { dataDancing } from "./dataDancing";
 import { dataFoto } from "./dataFoto";
 import { dataSong } from "./dataSong";
 import { dataTheatre } from "./dataTheatre";
+import { dataResults } from "./dataResults";
 
 export const gallery = [
   { name: "Студенческий листопад", data: dataSong, interval: 5000 },
@@ -11,5 +12,5 @@ export const gallery = [
 ];
 
 export const result = [
-  { name: "Награждение победителей", data: dataFoto, interval: 2600 },
+  { name: "Награждение победителей", data: dataResults, interval: 2600 },
 ];
