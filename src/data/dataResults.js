@@ -7,7 +7,7 @@ import img6 from "./images/results6.jpeg";
 import img7 from "./images/results7.jpeg";
 import img8 from "./images/results8.jpeg";
 
-export const dataTheatre = [{
+export const dataResults = [{
     _id: "593e9297e17df20c4a237d42",
     index: 0,
     age: 2021,
