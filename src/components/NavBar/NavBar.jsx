@@ -66,13 +66,13 @@ export const NavBar = () => {
           <li>
             <a
               className="nav-icon"
-              href="https://www.instagram.com/bru_university"
+              href="https://www.instagram.com/studclub300"
             >
               <FaInstagramSquare className="nav-icon" />
             </a>
           </li>
           <li>
-            <a className="nav-icon" href="https://t.me/Bru_Live">
+            <a className="nav-icon" href="https://vk.com/studclub_bru">
               <TiSocialVimeo className="nav-icon" />
             </a>
           </li>
