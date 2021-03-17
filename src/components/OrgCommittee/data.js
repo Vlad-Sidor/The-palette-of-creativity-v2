@@ -10,7 +10,7 @@ export const orgData = [{
 },
 {
     image: org2,
-    name: "Шевцов Михайлович",
+    name: "Шевцов Дмитрий",
     desrc: "Звукорежиссер"
 },
 {
